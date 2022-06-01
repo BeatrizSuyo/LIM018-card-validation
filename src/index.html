@@ -6,51 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   	<meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tarjeta de crédito válida</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
 
  <body>
-   <div class="contenedor">
-    <!-- Tarjeta -->
-    <section class="tarjeta" id="tarjeta">
-      <div class="delantera">
+  <!--<body onload="window.alert('Bienvenida!');">..probando-->
+    <!--Tarjeta -->
+    <main>
          <div class= "logo-marca">
-           <div class="cat">
-              <div class="alinear-derecha">
+            <div class="cat">
+             
                 <img src="mastercard.png" >
-              </div>
             </div>
-         </div>
-        </div>
-         <div class="cat">
-           <img src="chip-tarjeta.png" >
-         </div>
+          </div>
+    <div><br><br>
+      
+  <h2 class="titleCard">Válida tu tarjeta</h2><br><br>
+          <p class="getInto"><strong>NUMERO DE TARJETA</strong></p>
+    </div>
 
-        <div class="datos">
-            <div class="grupo" id="numero">
-                                            
-                 <p class="label">Número Tarjeta</p> 
-                 <input id="Creditcard" class="inputBor" type="text" name ="Creditcar"  maxlength="16">
-               <!-- <input placeholder="Numero de tarjeta" type="tel" name="number" id="number"-->
-               <!-- maxlength="16" class="jp-card-invalid visa identified" >-->
-            </div>
-                   <br>
-            <div class="flexbox">
-               <div class="grupo" id="nombre">
-                   <p class="label">Nombre Tarjeta</p>
-                   <p class="nombre"><strong>CRISTIAN BS</strong></p>
-               </div>
-               <div class="grupo" id="expiracion">
-                    <p class="label">Expiracion</p>
-                    <p class="expiracion"><span class="mes">MM</span> / <span class="year">AA</span></p><br>
-               </div>
-            </div>
-          <!--boton validar-->
-            <button id="validar" class="boton">Validar</button><br> <br>               </div>
-     </section>  
-   </div>  
-      <script src="index.js" type="module"></script>
+   <div id="creditCardNumber">
+     <input type="text" maxlength="16" placeholder="#### #### #### ####" id="numero"
+       onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" required />
+     <button type="button" class="btnVal" id="btnVal">Válidar</button>
+   </div>-->
+   <p id="result"></p> 
+     <!-- Resultado Valido o no -->
+   
+   <div id="bttRetVal">
+     <button type="button" class="btnRetun" id="btnRetun" onclick="location.reload();">Volver</button>
+   </div>
+ </section>
+</section>
+
+<!--</main>-->
+       <footer></footer>
+
+ <script src="index.js" type="module"></script>
+ <script src="validator.js" type="module"></script>
+ 
+ 
+
    
   </body>
 </html>
