@@ -1,10 +1,11 @@
 const validator = {
     isValid:(creditCardNumber) => {
-        //console.log(creditCardNumber);//creditCardNumber solo vive en esta funcion
+        console.log(creditCardNumber);//creditCardNumber solo vive en esta funcion
       const length = creditCardNumber.length;
-      console.log(length)
+      //console.log(length)
+      
       const reverse =creditCardNumber.split("").reverse();   //.split('') //Para convertir una cadena string a un array
-     
+     console.log('reverse',reverse)
       let suma = 0;                                           //.reverse() //Para invertir el orden de los numeros
                                                    //.parseInt(x)); //Para recorrer cada elemento del array y convertirlo a entero
       for ( let i = 0; i < length; i++){
@@ -12,20 +13,23 @@ const validator = {
 
         if (i % 2 !== 0){  
           numeroActual = numeroActual * 2
-          if(numeroActual < 9) 
+          console.log('numeroActual',numeroActual)
+          if(numeroActual > 9) 
           {
           numeroActual = numeroActual - 9;
-          console.log(numeroActual);
+          console.log('numeroActua lMenos Nueve',numeroActual);
           }       
           }   
-        suma = suma + numeroActual,
-        console.log(suma);
+        suma = suma + numeroActual;
+        
      }
+     console.log(suma)
+
     return (suma % 10) === 0;
     },
 
     maskify: (creditCardNumber) => {
-     return creditCardNumber.replace(/.(?=.{4})/g, "*");
+     return creditCardNumber.replace(/.(?=.{4})/g, "#");
   
   
   }
