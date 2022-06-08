@@ -24,8 +24,8 @@ const validator = {
            }
            console.log(suma)
 
-     return (suma % 10) === 0;
-    },
+      return (suma % 10) === 0;
+      },
 
                     // maskify: (creditCardNumber) => {
                     // return creditCardNumber.replace(/.(?=.{4})/g, "#");
@@ -50,10 +50,6 @@ export default validator
 
 //console.log(validator.isValid('123')))//elemento validator(desde el const validator) y su propiedad isvalid
 
-   
-
-
-
 
 // function welcome (){
 //     console.log('welcome to laboratoria'); 
@@ -62,12 +58,11 @@ export default validator
 // welcome ();
 
 
-
 //  let movie = {
 //     title: 'Back to the Future',
 //     stars : ['Michael J. Fox', 'Christopher Lloyd', 'Lea Thompson'],
 
-//  };
+//  
   
 // console.log(movie);
 
