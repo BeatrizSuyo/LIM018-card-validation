@@ -12,43 +12,50 @@
  <body>
   <!--<body onload="window.alert('Bienvenida!');">..probando-->
     <!--Tarjeta -->
-    <main>
-         <div class= "logo-marca">
-            <div class="cat">
-             
-                <img src="mastercard.png" >
+    <header>
+      <div class="contenedor">
+        <h1 class = "">PARA TUS VUELOS   @valida.tu.tarjeta.com...   Y   VUELA   RAPIDO</h1>
+        
+         <nav class = "menu">
+           <a></a>
+           <a >Inicio</a>
+           <a >Conocenos</a>
+           <a >Contacto</a>
+         </nav>
+      </div>
+       <!-- <div> -->
+            <div class= "logo-marca">
+                <div class="cat"> <img src="mastercard.png" ></div>
+                <div class="cat"> <img src="logo-visa.png.png" ></div>
             </div>
-          </div>
-    <div><br><br>
-      
-  <h2 class="titleCard">Válida tu tarjeta</h2><br><br>
-          <p class="getInto"><strong>NUMERO DE TARJETA</strong></p>
-    </div>
+           <div><br>
+               <h2 class="titleCard">Valida tu tarjeta</h2><br><br>
+               <p class="getInto"><strong>NUMERO DE TARJETA</strong></p>
+            </div>
 
-   <div id="creditCardNumber">
-     <input type="text" maxlength="16" placeholder="#### #### #### ####" id="numero"
-       onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" required />
-     <button type="button" class="btnVal" id="btnVal">Válidar</button>
-   </div>-->
-   <p id="result"></p> 
+     <div id="creditCardNumber">
+       <input type="text" maxlength="16" placeholder="#### #### #### ####" id="numero"
+        onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" required /> 
+       <button type="button" class="btnVal" id="btnVal">Validar</button>
+     </div>
+        <p id="result"  style="font-style: italic"></p> 
      <!-- Resultado Valido o no -->
    
-   <div id="bttRetVal">
-     <button type="button" class="btnRetun" id="btnRetun" onclick="location.reload();">Volver</button>
-   </div>
- </section>
-</section>
+       <div id="bttRetVal">
+          <button type="button" class="btnRetun" id="btnRetun" onclick="location.reload();">Volver</button>
+       </div>
+ </div>
 
-<!--</main>-->
-       <footer></footer>
-
- <script src="index.js" type="module"></script>
- <script src="validator.js" type="module"></script>
- 
- 
-
-   
-  </body>
+        <script src="index.js" type="module"></script>
+         <footer>
+           <div class="contenedor">
+              <p class="copy">Valida.tu.tarjeta.com &2022</p>
+              <div class="box"></div>
+              <div class="cat"> <img src="Logo Facebook.png.png" ></div>
+              <div class="cat"> <img src="logo instagram.png.png" ></div>
+           </div>
+         </footer>
+ </body>
 </html>
 
 
