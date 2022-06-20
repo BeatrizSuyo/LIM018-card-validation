@@ -11,50 +11,61 @@
 
  <body>
   <!--<body onload="window.alert('Bienvenida!');">..probando-->
-    <!--Tarjeta -->
-    <header>
-      <div class="contenedor">
-        <h1 class = "">PARA TUS VUELOS   @valida.tu.tarjeta.com...   Y   VUELA   RAPIDO</h1>
+     <header>
+          <div class="contenedor">
+            <!-- <h1 class = "">Para tus vuelos ✈️ @valida.tu.tarjeta.com</h1>  <h1>y vuela rápido</h1> -->
+            <h1 class="titulo"><span>✈️</span>Beatriz Travel </h1>
+          </div>
+     </header> 
+    <main>
+       <!-- <div class="lista-nav"> -->
+            <nav class = "menu">
+              <a href="">INICIO</a>
+              <a href="https://www.kayak.com.pe/flights?lang=es&skipapp=true&gclid=Cj0KCQjwzLCVBhD3ARIsAPKYTcQGXv9kmoyYKrQmStVbeE5GgoSv3KKmEg5ZhbZ77VkdFrEkJQobro8aAq-VEALw_wcB " >VUELOS</a>
+              <a href="https://abordodelmundo.com/reservar-un-vuelo-sin-comprarlo/ ">RESERVAS</a>
+            </nav>
+      
+         <div class="cajaValidadora">
+             <div>
+                <h2 class="textValidador"><strong>Valida tu tarjeta</strong></h2>
+                <div class= "logo-marca">
+                  <img src="./imagen/diners club.png"  height="30" alt="logo diners club">
+                  <img src="./imagen/mastercard.png"  height="30" alt="logo mastercard">
+                  <img src="./imagen/logo visa.png"  height="30" alt="logo visa"> 
+                  <img src="./imagen/american express.png" height="35" alt="logo american express">
+                </div>
+                <br>
+                <p class="textValidador"><strong>NUMERO DE TARJETA</strong></p>
+             </div>
+             <br>
+    
+             <div id="creditCardNumber" class="texto">
+                <input type="text" maxlength="16" placeholder="#### #### #### ####" id="numero"
+                  onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" required /> 
+                  <br><br>
+                <button type="button" class="btnVal" id="btnVal">Validar</button>
+             </div>
+
+             <div id="bttRetVal">
+                <button type="button" class="btnRetun" id="btnRetun" onclick="location.reload();">Limpiar</button>
+             </div>                                        <!--carga de nuevo la url actual: location reload ()-->
+
+              <p id="result"  style="font-style: italic"></p> 
+         </div><br><br>
+                                            
+   </main> 
         
-         <nav class = "menu">
-           <a></a>
-           <a >Inicio</a>
-           <a >Conocenos</a>
-           <a >Contacto</a>
-         </nav>
-      </div>
-       <!-- <div> -->
-            <div class= "logo-marca">
-                <div class="cat"> <img src="mastercard.png" ></div>
-                <div class="cat"> <img src="logo-visa.png.png" ></div>
-            </div>
-           <div><br>
-               <h2 class="titleCard">Valida tu tarjeta</h2><br><br>
-               <p class="getInto"><strong>NUMERO DE TARJETA</strong></p>
-            </div>
+            <footer>
+                 <div class="contenedor">
+                  <p class="copy"><strong> © 2022valida.tu.tarjeta.com</strong></p>
+                 <div class="box"></div>
+              
+                 <img src="./imagen/Logo facebook.png"  height="45">
+                 <img src="./imagen/logo instagram.png" height="40">
+                </div>
+            </footer>
 
-     <div id="creditCardNumber">
-       <input type="text" maxlength="16" placeholder="#### #### #### ####" id="numero"
-        onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" required /> 
-       <button type="button" class="btnVal" id="btnVal">Validar</button>
-     </div>
-        <p id="result"  style="font-style: italic"></p> 
-     <!-- Resultado Valido o no -->
-   
-       <div id="bttRetVal">
-          <button type="button" class="btnRetun" id="btnRetun" onclick="location.reload();">Volver</button>
-       </div>
- </div>
-
-        <script src="index.js" type="module"></script>
-         <footer>
-           <div class="contenedor">
-              <p class="copy">Valida.tu.tarjeta.com &2022</p>
-              <div class="box"></div>
-              <div class="cat"> <img src="Logo Facebook.png.png" ></div>
-              <div class="cat"> <img src="logo instagram.png.png" ></div>
-           </div>
-         </footer>
+  <script src="index.js" type="module"></script>
  </body>
 </html>
 
