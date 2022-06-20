@@ -1,15 +1,15 @@
-const validator = {
-    isValid:(creditCardNumber) => {
+const validator = {                  //declaro el objeto validator
+    isValid:(creditCardNumber) => {   //parametro creditCardNumber
           //console.log(creditCardNumber);//creditCardNumber solo vive en esta funcion
       const length = creditCardNumber.length;
-          //console.log(length)
-      const reverse =creditCardNumber.split("").reverse();   //.split('') //Para convertir una cadena string a un array
-      console.log('reverse',reverse)
+          console.log(length)
+      const reverse =creditCardNumber.split("").reverse();   //.split('') //Para convertir un string a un array
+          console.log('reverse',reverse)
       let suma = 0;                                           //.reverse() //Para invertir el orden de los numeros
                                                    //.parseInt(x)); //Para recorrer cada elemento del array y convertirlo a entero
       for ( let i = 0; i < length; i++){
           let numeroActual = parseInt(reverse[i]);
-
+         console.log(numeroActual)
              if (i % 2 !== 0)
              {  
                numeroActual = numeroActual * 2
@@ -17,18 +17,19 @@ const validator = {
                if(numeroActual > 9) 
                {
                  numeroActual = numeroActual - 9;
-                 console.log('numeroActual Menos Nueve',numeroActual);
+                console.log('numeroActual Menos Nueve',numeroActual);
                }       
              }   
             suma = suma + numeroActual;
+            console.log(suma)
            }
-           console.log(suma)
+           //console.log(suma)
 
       return (suma % 10) === 0;
       },
 
-                    // maskify: (creditCardNumber) => {
-                    // return creditCardNumber.replace(/.(?=.{4})/g, "#");
+                                     // maskify: (creditCardNumber) => {
+                                     // return creditCardNumber.replace(/.(?=.{4})/g, "#");
 
     maskify: (creditCardNumber) =>
      {
@@ -55,7 +56,7 @@ export default validator
 //     console.log('welcome to laboratoria'); 
 //     return welcome  
 // }
-// welcome ();
+// welcome (
 
 
 //  let movie = {
