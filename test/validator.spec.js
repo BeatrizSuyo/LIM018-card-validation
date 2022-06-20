@@ -7,6 +7,7 @@ describe('validator', () => {
   });
 
   describe('validator.isValid', () => {
+    
     it('debería ser una función', () => {
       expect(typeof validator.isValid).toBe('function');
     });
