@@ -1,20 +1,26 @@
 
 import validator from './validator.js';
-
+  
   const creditCardNumber = document.getElementById("numero");
+                 //console.log(creditCardNumber);
   const btnVal = document.getElementById("btnVal");
   const result = document.getElementById("result");
-  const volver = document.getElementById("btnRetun");
+                   
+                //console.log(validator.isValid('4083952015263'))
+
   btnVal.addEventListener("click", (event) => {
-    event.preventDefault()
-    //console.log("hola", creditCardNumber.value);
-      console.log("hola");
-     if(validator.isValid(creditCardNumber.value)){
-       result.innerHTML = `tu tarjeta ${validator.maskify(creditCardNumber.value)} es valida`;
-       } else {
-        result.innerHTML = `tu verificacion fallo ${validator.maskify(creditCardNumber.value)}, vuelve a intentarlo`;
-       }
-  
+    event.preventDefault(); //previniendo que el navegador realice otra acción//
+                   //console.log("hola", creditCardNumber.value);
+                    //console.log("hola");
+       if(validator.isValid(creditCardNumber.value)){
+        result.innerHTML = `TU TARJETA  ${validator.maskify(creditCardNumber.value)} ES VALIDA`;
+        } else {
+        result.innerHTML = `TU VERIFICACIÓN FALLÓ ${validator.maskify(creditCardNumber.value)}, VUELVE A INTENTARLO`;
+        }    //invoca a las funciones isvalid y maskify para actualizar el resultado//
+         
+  //numeroEnmascarado =maskify(creditCardNumber);
+  //creditCardNumber.innerHTML = `su tarjeta + numeroEnmascarado `  
+  creditCardNumber.innerHTML = `numeroEnmascarado `
    }
    );
 
@@ -23,4 +29,4 @@ import validator from './validator.js';
 
  
 
-// console.log(validator.isValid);
+ //console.log(validator.isValid);
